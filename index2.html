@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.js のサンプル</title>
+  <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"></script>
+</head>
+<body>
+  <h1>Vue3</h1>
+  <div id="app">
+    <p>{{ message }}</p>
+  </div>
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: "Hello Vue"
+        };
+      }
+    });
+    app.mount('#app');
+  </script>
+</body>
+</html>
